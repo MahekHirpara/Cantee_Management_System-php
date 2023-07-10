@@ -39,10 +39,7 @@ CREATE TABLE `admin_login` (
 --
 
 INSERT INTO `admin_login` (`AdminId`, `Email`, `password`, `verify_token`) VALUES
-(1, 'admin@gmail.com', 'Admin@123', '434f695ffce0fbc40fe770d2fd76a241'),
-(2, 'mahekhirpara63@gmail.com', 'Mahek@234', 'df0b79354eaf03ad06aa4534635c6318'),
-(3, 'mahekhirpara28@gmail.com', 'Mahek@234', ''),
-(4, 'hirparasangita62@gmail.com', 'Sangita@123', '95cfadacf02d40cbda76815c8cbae58a');
+(1, 'admin@gmail.com', 'Admin@123', '434f695ffce0fbc40fe770d2fd76a241');
 
 -- --------------------------------------------------------
 
@@ -59,11 +56,6 @@ CREATE TABLE `feedbacktb` (
 --
 -- Dumping data for table `feedbacktb`
 --
-
-INSERT INTO `feedbacktb` (`FeedbackId`, `CustomerId`, `Review`) VALUES
-(2, 22, 'good'),
-(3, 22, 'very good'),
-(4, 22, 'bad');
 
 -- --------------------------------------------------------
 
@@ -112,54 +104,6 @@ CREATE TABLE `historyiteam` (
 -- Dumping data for table `historyiteam`
 --
 
-INSERT INTO `historyiteam` (`id`, `orderid`, `MenuId`, `iteamquentity`, `Food_Type`, `CustomerId`) VALUES
-(10, 13, 27, 1, '  type27=regular', 22),
-(11, 14, 12, 2, '  type12=regular', 23),
-(12, 14, 33, 2, '  ', 23),
-(13, 17, 27, 2, '  type27=jain', 23),
-(14, 16, 25, 3, '  ', 23),
-(15, 15, 12, 2, '  type12=jain', 23),
-(16, 18, 33, 2, '  type33=regular', 23),
-(17, 19, 33, 1, '  type33=regular', 24),
-(18, 20, 29, 1, '  type29=jain', 24),
-(19, 21, 29, 1, '  type29=regular', 24),
-(20, 22, 27, 3, '  type27=jain', 22),
-(21, 23, 17, 1, '  type17=regular', 22),
-(22, 23, 35, 1, '  type35=jain', 22),
-(23, 24, 33, 2, '  type33=regular', 22),
-(24, 24, 27, 2, '  type27=regular', 22),
-(25, 25, 27, 2, '  type27=regular', 22),
-(26, 25, 13, 1, '  type13=regular', 22),
-(27, 25, 11, 1, '  ', 22),
-(28, 26, 21, 1, '  21=jain', 22),
-(29, 26, 27, 2, '  27=regular', 22),
-(30, 26, 13, 3, '  13=regular', 22),
-(31, 27, 15, 3, '  15=jain', 22),
-(32, 28, 12, 1, '  12=regular', 25),
-(33, 28, 11, 1, '  11=jain', 25),
-(34, 28, 19, 1, '  19=jain', 25),
-(35, 30, 23, 1, '  23=jain', 25),
-(36, 29, 15, 1, '  15=jain', 25),
-(37, 32, 29, 5, '  29=jain', 22),
-(38, 32, 23, 1, '  23=regular', 22),
-(39, 33, 33, 1, '  33=regular', 22),
-(40, 35, 16, 3, '  16=regular', 24),
-(41, 35, 28, 1, '  28=regular', 24),
-(42, 34, 11, 1, '  11=jain', 22),
-(43, 31, 23, 1, '  23=regular', 25),
-(44, 36, 30, 1, '  ', 25),
-(45, 36, 14, 1, '  ', 25),
-(46, 37, 35, 1, '  35=regular', 25),
-(47, 39, 36, 1, '  ', 22),
-(48, 38, 21, 1, '  21=jain', 24),
-(49, 40, 23, 2, '  23=jain', 22),
-(50, 41, 24, 1, '  24=jain', 22),
-(51, 41, 21, 2, '  21=regular', 22),
-(52, 42, 30, 2, '  30=jain', 22),
-(53, 43, 13, 1, '  ', 22),
-(54, 44, 29, 2, '  29=jain', 22),
-(55, 45, 19, 1, '  19=regular', 22),
-(56, 46, 29, 1, '  29=jain', 22);
 
 -- --------------------------------------------------------
 
@@ -180,44 +124,7 @@ CREATE TABLE `historyorder` (
 -- Dumping data for table `historyorder`
 --
 
-INSERT INTO `historyorder` (`id`, `Orderid`, `CustomerId`, `OrderType`, `Amount`, `addedate`) VALUES
-(14, 13, 22, 'online', 30, '2023-06-02'),
-(15, 14, 23, 'cash', 300, '2023-06-02'),
-(16, 17, 23, 'cash', 60, '2023-06-02'),
-(17, 16, 23, 'cash', 120, '2023-06-02'),
-(18, 15, 23, 'cash', 200, '2023-06-02'),
-(19, 18, 23, 'cash', 100, '2023-06-03'),
-(20, 19, 24, 'online', 50, '2023-06-03'),
-(21, 20, 24, 'cash', 50, '2023-06-03'),
-(22, 21, 24, 'cash', 50, '2023-06-03'),
-(23, 22, 22, 'cash', 90, '2023-06-03'),
-(24, 23, 22, 'cash', 10, '2023-06-04'),
-(25, 24, 22, 'cash', 100, '2023-06-04'),
-(26, 25, 22, 'cash', 280, '2023-06-04'),
-(27, 26, 22, 'cash', 560, '2023-06-04'),
-(28, 27, 22, 'online', 120, '2023-06-05'),
-(29, 28, 25, 'cash', 230, '2023-06-05'),
-(30, 30, 25, 'online', 80, '2023-06-05'),
-(31, 29, 25, 'cash', 40, '2023-06-05'),
-(32, 32, 22, 'cash', 330, '2023-06-08'),
-(33, 33, 22, 'cash', 50, '2023-06-13'),
-(34, 35, 24, 'cash', 80, '2023-06-13'),
-(35, 34, 22, 'cash', 70, '2023-06-13'),
-(36, 31, 25, 'online', 80, '2023-06-05'),
-(37, 36, 25, 'cash', 190, '2023-06-13'),
-(38, 37, 25, 'cash', 40, '2023-06-13'),
-(39, 39, 22, 'cash', 60, '2023-06-13'),
-(40, 38, 24, 'cash', 50, '2023-06-13'),
-(41, 40, 22, 'cash', 160, '2023-06-14'),
-(42, 41, 22, 'cash', 130, '2023-06-14'),
-(43, 42, 22, 'online', 80, '2023-06-14'),
-(44, 43, 22, 'cash', 150, '2023-06-14'),
-(45, 44, 22, 'cash', 100, '2023-06-16'),
-(46, 44, 22, 'cash', 100, '2023-06-16'),
-(47, 44, 22, 'cash', 100, '2023-06-16'),
-(48, 44, 22, 'cash', 100, '2023-06-16'),
-(49, 45, 22, 'online', 60, '2023-06-16'),
-(50, 46, 22, 'cash', 50, '2023-06-18');
+
 
 -- --------------------------------------------------------
 
@@ -326,15 +233,6 @@ CREATE TABLE `payment` (
 -- Dumping data for table `payment`
 --
 
-INSERT INTO `payment` (`id`, `payment_date`, `fname`, `lname`, `amount`, `status`, `txnid`, `email`, `OrderId`, `currency`, `mobile`) VALUES
-(7, '2023-06-02 00:01:13', 'mahek', 'Patel', '30', 'success', 'pay_LwlVkJv6DDTKkf', 'mahekhirpara63@gmail.com', 13, 'INR', 2147483647),
-(8, '2023-06-03 14:26:00', 'krishna', 'khokhariya', '50', 'success', 'pay_LxOmIGNT6NegJo', 'krishnakhokhariya26@gmail.com', 19, 'INR', 2147483647),
-(9, '2023-06-05 09:34:17', 'mahek', 'hirpara', '120', 'success', 'pay_Ly6sIFZa0XymXw', 'mahekhirpara63@gmail.com', 27, 'INR', 2147483647),
-(10, '2023-06-05 10:13:21', 'vishwa', 'khokhariya', '80', 'success', 'pay_Ly7XiTSTOUXy6y', 'vishwakhokhariya028@gmail.com', 30, 'INR', 2147483647),
-(11, '2023-06-05 10:20:49', 'vishwa', 'khokhariya', '80', 'success', 'pay_Ly7fae1VBjNtMg', 'vishwakhokhariya028@gmail.com', 31, 'INR', 2147483647),
-(12, '2023-06-14 21:55:45', 'mahek', 'hirpara', '80', 'success', 'pay_M1sJn4YYHgNP05', 'mahekhirpara63@gmail.com', 42, 'INR', 2147483647),
-(13, '2023-06-16 22:37:27', 'mahek', 'hirpara', '60', 'success', 'pay_M2g67leTF9onWQ', 'mahekhirpara63@gmail.com', 45, 'INR', 2147483647);
-
 -- --------------------------------------------------------
 
 --
@@ -351,12 +249,6 @@ CREATE TABLE `registation` (
 --
 -- Dumping data for table `registation`
 --
-
-INSERT INTO `registation` (`id`, `Username`, `Email`, `verify_token`) VALUES
-(22, 'mahek', 'mahekhirpara63@gmail.com', 'a5172329a44f25cc5910ac8de2ac0eaa'),
-(23, 'sangita', 'hirparasangita62@gmail.com', '919106720345b302d21663654024afbd'),
-(24, 'krishna', 'krishnakhokhariya26@gmail.com', '10355aec3b05a5cfa8441fc2905344c7'),
-(25, 'vishwa', 'vishwakhokhariya028@gmail.com', '2c49aebf4f88d3b560729859aa40dd12');
 
 -- --------------------------------------------------------
 
@@ -412,21 +304,6 @@ CREATE TABLE `wishlist` (
 -- Dumping data for table `wishlist`
 --
 
-INSERT INTO `wishlist` (`likeid`, `CustomerId`, `MenuId`, `flag`) VALUES
-(25, 22, 15, 1),
-(28, 22, 28, 1),
-(29, 23, 33, 1),
-(30, 23, 34, 1),
-(31, 23, 28, 1),
-(32, 23, 15, 1),
-(34, 25, 27, 1),
-(35, 25, 15, 1),
-(36, 25, 28, 1),
-(37, 25, 33, 1),
-(39, 24, 16, 1),
-(40, 22, 33, 1),
-(41, 22, 23, 1),
-(42, 22, 29, 1);
 
 --
 -- Indexes for dumped tables
